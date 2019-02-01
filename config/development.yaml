@@ -1,0 +1,76 @@
+server:
+  port: 9001
+  appName: Wise Report Center
+
+log:
+  path: \archive\logs\ec2-user\wise-report-center
+
+system:
+  useForever: false
+  nodeProcessNumber: 1
+  appLoginUser: wisebot
+  appLoginPwd: uiop7890
+  company: LT
+  facility: VAL
+  timezone: America/Los_Angeles
+  hmac:
+    product: WISE
+    secret: d09adbbb-ba37-4cf1-859e-4dce55b6486a
+
+mail:
+  host: mail.dospartner.com
+  port: 587
+  secure: false
+  ignoreTLS: true
+  user: linc@logisticsteam.com
+  pass: 98rrd39
+
+targets:
+  wise:
+    baseUrl: http://stage.logisticsteam.com
+  idmApp:
+    baseUrl: http://stage.logisticsteam.com/shared/idm-app
+  fdApp:
+     baseUrl: http://stage.logisticsteam.com/shared/fd-app
+  fileApp:
+    baseUrl: http://stage.logisticsteam.com/shared/file-app
+  printApp:
+    baseUrl: http://stage.logisticsteam.com/shared/print-app
+  wmsApp:
+    baseUrl: http://stage.logisticsteam.com/valley/wms-app
+  ymsApp:
+    baseUrl: http://stage.logisticsteam.com/yms/valley/yms-app
+  baseApp:
+    baseUrl: http://stage.logisticsteam.com/valley/base-app
+  bam:
+    baseUrl: http://stage.logisticsteam.com/valley/bam
+
+mySqlURI:
+  shared:
+    host: 34.209.87.218
+    port: 13306
+    user: root
+    password: 1232wqa
+    database: shared_wms
+    maxPoolSize: 10
+  wms:
+    host: 34.209.87.218
+    port: 13306
+    user: root
+    password: 1232wqa
+    database: valley_wms
+    maxPoolSize: 10
+
+mongoURI:
+  shared:
+    url: mongodb://wisemongo:u2F%40Cg4o@34.209.87.218:17017/shared_wms
+    database: shared_wms
+    maxPoolSize: 10
+  wms:
+    url: mongodb://wisemongo:u2F%40Cg4o@34.209.87.218:17017/valley_wms
+    database: valley_wms
+    maxPoolSize: 10
+
+api:
+  saferBus: https://mobile.fmcsa.dot.gov/qc/services/carriers/
+  smallParcelShipment: http://64.27.29.11:81/SmallParcel/Shipment/V2/Wise

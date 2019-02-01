@@ -1,0 +1,6 @@
+Company,Facility,ReceiptID,ReceiptType,Customer,Title,Carrier,Reference,PO,CreateTime,ETA,AppointmentTime,InYardDate,DevannedDate,EntryType,ContainerNo,ContainerType,ContainerQty,TrailerType,TrailerQty,EntryID,RushOrder,UsedHours,LabelQty,Item,ItemGrade,ItemType,Title,Supplier,ItemUOM,ExpectedQty,ReceivedQty,ItemVOL,VolumeUOM,ItemWGT,WeightUOM,ItemAREA,AreaUOM,PalletType,PalletQty
+LT,VB,RN-1262,,EFIKEE0001,EFIKEE0001,UKWN,4589089M01,4589089M01,2018-02-23 00:06:21,2018-02-23 12:00:00,,2018-03-29 11:48:01,2018-03-29 21:31:09,EDI,MOFU6836240,40,1,48,0,ET-1631,false,0,1
+,,,,,,,,,,,,,,,,,,,,,,,,1002990,,,EFIKEE0001,EFIKEE0001,EA,888,888,0,cubic footage,0,POUND,0,square footage,other size,0
+,,,,,,,,,,,,,,,,,,,,,,,,1011401,,,EFIKEE0001,EFIKEE0001,EA,1416,1416,0,cubic footage,0,POUND,0,square footage,other size,0
+,,,,,,,,,,,,,,,,,,,,,,,,1014217,,,EFIKEE0001,EFIKEE0001,EA,1416,1416,0,cubic footage,0,POUND,0,square footage,other size,0
+,,,,,,,,,,,,,,,,,,,,,,,,1014731,,,EFIKEE0001,EFIKEE0001,EA,1800,1800,0,cubic footage,0,POUND,0,square footage,other size,0

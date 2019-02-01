@@ -1,0 +1,74 @@
+server:
+  port: 9001
+  appName: Wise Report Center
+
+log:
+  path: /archive/logs/wise-report-center
+
+system:
+  useForever: false
+  nodeProcessNumber: 1
+  appLoginUser: {{.rcAppLoginUser}}
+  appLoginPwd: {{.rcAppLoginPwd}}
+  company: {{.rcCompany}}
+  facility: {{.rcFacility}}
+  timezone: {{.timezone}}
+  hmac:
+    product: WISE
+    secret: d09adbbb-ba37-4cf1-859e-4dce55b6486a
+
+mail:
+  host: mail.dospartner.com
+  port: 587
+  secure: false
+  ignoreTLS: true
+  user: linc@logisticsteam.com
+  pass: 98rrd39
+
+targets:
+  wise:
+    baseUrl: {{.rcWise}}
+  idmApp:
+    baseUrl: {{.rcIdmApp}}
+  fdApp:
+     baseUrl: {{.rcFdApp}}
+  fileApp:
+    baseUrl: {{.rcFileApp}}
+  printApp:
+    baseUrl: {{.rcPrintApp}}
+  wmsApp:
+    baseUrl: {{.rcWmsApp}}
+  ymsApp:
+    baseUrl: {{.rcYmsApp}}
+  baseApp:
+    baseUrl: {{.rcBaseApp}}
+  bam:
+    baseUrl: {{.rcBam}}
+
+mySqlURI:
+  shared:
+    host: {{.rcSharedMysqlHost}}
+    port: {{.rcSharedMysqlPort}}
+    user: {{.rcSharedMysqlReadonlyUser}}
+    password: {{.rcSharedMysqlReadonlyPassword}}
+    database: {{.rcMysqlSharedDatabase}}
+    maxPoolSize: 10
+  wms:
+    host: {{.rcWarehouseMysqlHost}}
+    port: {{.rcWarehouseMysqlPort}}
+    user: {{.rcWarehouseMysqlReadonlyUser}}
+    password: {{.rcWarehouseMysqlReadonlyPassword}}
+    database: {{.rcMysqlWarehouseDatabase}}
+    maxPoolSize: 10
+
+mongoURI:
+  shared:
+    url: mongodb://{{.rcSharedMongo}}
+    database: {{.rcMongoSharedDatabase}}
+    maxPoolSize: 10
+  wms:
+    url: mongodb://{{.rcWarehouseMongo}}
+    database: {{.rcMongoWarehouseDatabase}}
+    maxPoolSize: 10
+
+

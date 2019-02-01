@@ -1,0 +1,76 @@
+server:
+  port: 9001
+  appName: Wise Report Center
+
+log:
+  path: D:\Logistics\wise-report-center\logs
+
+system:
+  useForever: false
+  nodeProcessNumber: 1
+  appLoginUser: wisebot
+  appLoginPwd: uiop7890
+  company: LT
+  facility: WAL
+  timezone: America/Los_Angeles
+  hmac:
+    product: WISE
+    secret: d09adbbb-ba37-4cf1-859e-4dce55b6486a
+
+mail:
+  host: mail.dospartner.com
+  port: 587
+  secure: false
+  ignoreTLS: true
+  user: linc@logisticsteam.com
+  pass: 98rrd39
+
+targets:
+  wise:
+    baseUrl: https://wise.logisticsteam.com/v2
+  idmApp:
+    baseUrl: https://wise.logisticsteam.com/v2/shared/idm-app
+  fdApp:
+     baseUrl: https://wise.logisticsteam.com/v2/shared/fd-app
+  fileApp:
+    baseUrl: https://wise.logisticsteam.com/v2/shared/file-app
+  printApp:
+    baseUrl: https://wise.logisticsteam.com/v2shared/print-app
+  wmsApp:
+    baseUrl: https://wise.logisticsteam.com/v2/walnut/wms-app
+  ymsApp:
+    baseUrl: https://wise.logisticsteam.com/v2/walnut/yms-app
+  baseApp:
+    baseUrl: https://wise.logisticsteam.com/v2/walnut/base-app
+  bam:
+    baseUrl: https://wise.logisticsteam.com/v2/walnut/bam
+
+mySqlURI:
+  shared:
+    host: 54.191.53.43
+    port: 13306
+    user: root
+    password: 1232wqa
+    database: shared_wms
+    maxPoolSize: 10
+  wms:
+    host: 54.191.53.43
+    port: 13306
+    user: root
+    password: 1232wqa
+    database: walnut_wms
+    maxPoolSize: 10
+
+mongoURI:
+  shared:
+    url: mongodb://wisemongo:y3E%40Pg7o@54.202.138.165:17017/shared_wms
+    database: shared_wms
+    maxPoolSize: 10
+  wms:
+    url: mongodb://wisemongo:y3E%40Pg7o@54.202.138.165:17017/walnut_wms
+    database: walnut_wms
+    maxPoolSize: 10
+
+api:
+  saferBus: https://mobile.fmcsa.dot.gov/qc/services/carriers/
+  smallParcelShipment: http://64.27.29.11:81/SmallParcel/Shipment/V2/Wise

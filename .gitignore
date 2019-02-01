@@ -1,0 +1,19 @@
+# Intellij
+.idea/*
+logs/*
+*.imls
+*.iws
+*.ipr
+.settings/
+
+# Mac
+.DS_Store
+
+#node
+node_modules/
+coverage/
+npm-debug.log
+.vscode/launch.json
+
+package-lock.json
+*.txt
